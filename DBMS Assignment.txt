@@ -1,0 +1,13 @@
+Assignment on My SQL
+
+Create table test_sagar.products (product_id numeric(2), product_name varchar(30), price numeric(6), stock_quantity numeric(2));
+Alter table test_sagar.products ADD column category varchar(30);
+Alter table test_sagar.products Modify column price decimal(6,2);
+Alter table test_sagar.products ADD constraint primary key (product_id);
+Alter table Employees ADD foreign key (orders) REFERENCES products (product_id);
+INSERT INTO test_sagar.products (product_id, product_name, price, stock_quantity, category) VALUES ('3', 'apple', '1000', '20', 'mobile');
+Update test_sagar.products set price = 500 where product_id = 1;
+Delete from test_sagar.products where stock_quantity=0;
+SELECT * FROM test_sagar.products;
+Delete from test_sagar.products;
+Drop table test_sagar.products;
